@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+bash | set -eEux
+
+yarn build
+yarn test
+
