@@ -8,6 +8,8 @@
     ".build/**/*"
   ],
   "scripts": {
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
     "build": "node esbuild.config.js",
@@ -19,6 +21,12 @@
     "test:watch": "jest --watch --verbose false --coverage --notify",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
