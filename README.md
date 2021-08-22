@@ -9,7 +9,6 @@ Features:
 - `yarn lint` script for linting the app with eslint and prettier
 - Husky configuration for validating commit messages, lint issues and running tests
 - tsconfig project configuration for Node 14 projects
-- yarn 2 project configuration
 - jest configuration for unit tests
 - multi-staged docker build
 - github actions configuration for build and test
