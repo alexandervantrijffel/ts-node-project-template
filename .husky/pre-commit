@@ -3,4 +3,4 @@
 
 bash | set -eEux
 
-yarn lint-staged
+yarn dlx lint-staged

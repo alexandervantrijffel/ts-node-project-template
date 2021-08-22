@@ -9,13 +9,20 @@ Features:
 - `yarn lint` script for linting the app with eslint and prettier
 - Husky configuration for validating commit messages, lint issues and running tests
 - tsconfig project configuration for Node 14 projects
+- yarn 2 project configuration
 - jest configuration for unit tests
 - multi-staged docker build
 - github actions configuration for build and test
 
-### Getting started
+## Getting started
 
 Run `yarn install` and `yarn serve` to run the application in development mode.
+
+## IDE support
+
+For vscode, run `yarn dlx @yarnpkg/sdks vscode` after cloning the repository.
+
+For vim, run `yarn dlx @yarnpkg/sdks vim`
 
 ### Docker build
 

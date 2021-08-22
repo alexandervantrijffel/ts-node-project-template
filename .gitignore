@@ -54,3 +54,14 @@ build
 
 # docker secrets
 **/*_secret
+ 
+# yarn v2.x and above
+.yarn/*
+#!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+#!.yarn/sdks
+!.yarn/versions
+
+.vim/coc-settings.json
