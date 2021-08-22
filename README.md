@@ -1,10 +1,10 @@
-# Typescript project template
+# Typescript Node project template
 
-This template shows how to setup a project with support for Typescript and Node 14.
+This template contains a full project configuration for Typescript and Node 14 based projects.
 
 Features:
 
-- `yarn build` production build that builds a single, minified, tree shaked .build/index.js bundle file built with esbuild
+- `yarn build` production build that builds a single, minified, tree shaked .build/index.js bundle file with a Typescript sourcemap, built with esbuild
 - `yarn serve` script for development mode, this auto rebuilds and restarts the app on changes with nodemon
 - `yarn lint` script for linting the app with eslint and prettier
 - Husky configuration for validating commit messages, lint issues and running tests
@@ -13,7 +13,7 @@ Features:
 - multi-staged docker build
 - github actions configuration for build and test
 
-### Getting started
+## Getting started
 
 Run `yarn install` and `yarn serve` to run the application in development mode.
 
