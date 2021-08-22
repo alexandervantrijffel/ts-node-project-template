@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
 COPY esbuild*.js ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --immutable
 COPY tsconfig*.json ./
 COPY src src
 RUN yarn build

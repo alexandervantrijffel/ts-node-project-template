@@ -28,9 +28,10 @@
     "strictNullChecks": true,
     "stripInternal": true,
     "suppressImplicitAnyIndexErrors": true,
-    "baseUrl": ".",
-    "paths": {
-      "logform": ["src/logform-custom.js"]
-    }
+    "baseUrl": "."
+    // not supported with Yarn 2 PnP
+    //"paths": {
+    //  "logform": ["src/logform-custom.js"]
+    //}
   }
 }
