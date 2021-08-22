@@ -22,4 +22,4 @@ COPY --from=builder /app/.build/ .
 
 EXPOSE 3000
 
-ENTRYPOINT [ "/sbin/tini","--", "node", "index.js" ]
+ENTRYPOINT [ "/sbin/tini","--", "node", "--enable-source-maps", "index.js" ]
