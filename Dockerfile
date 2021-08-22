@@ -15,8 +15,10 @@ WORKDIR /app
 RUN chown node:node .
 USER node
 
-COPY --from=builder /app/node_modules/ node_modules/
 COPY --from=builder /app/.build/ .
+
+# Luckily, this is not necessary with esbuild
+# COPY --from=builder /app/node_modules/ node_modules/
 
 EXPOSE 3000
 

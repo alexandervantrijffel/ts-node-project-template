@@ -1,7 +1,10 @@
 const esbuild = require('esbuild')
+const devMode = process.argv.includes('--watch')
 
 // Automatically exclude all node_modules from the bundled version
+// in devMode
 const { nodeExternalsPlugin } = require('esbuild-node-externals')
+const plugins = devMode ? [nodeExternalsPlugin()] : []
 
 esbuild
   .build({
@@ -12,7 +15,7 @@ esbuild
     platform: 'node',
     sourcemap: true,
     target: 'node14',
-    plugins: [nodeExternalsPlugin()],
-    watch: process.argv.includes('--watch')
+    plugins,
+    watch: devMode
   })
   .catch(() => process.exit(1))
