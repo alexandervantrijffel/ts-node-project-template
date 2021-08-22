@@ -18,12 +18,6 @@ Features:
 
 Run `yarn install` and `yarn serve` to run the application in development mode.
 
-## IDE support
-
-For vscode, run `yarn dlx @yarnpkg/sdks vscode` after cloning the repository.
-
-For vim, run `yarn dlx @yarnpkg/sdks vim`
-
 ### Docker build
 
 Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`.
