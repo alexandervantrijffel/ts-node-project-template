@@ -42,17 +42,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:4.29.2"],
             ["@typescript-eslint/parser", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:4.29.2"],
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.0.1-rc.1"],
             ["dotenv", "npm:10.0.0"],
             ["esbuild", "npm:0.12.22"],
-            ["esbuild-node-externals", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.3.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:8.3.0"],
             ["eslint-plugin-prettier", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:3.4.1"],
             ["husky", "npm:7.0.1"],
             ["jest", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:27.0.6"],
             ["json-colorizer", "npm:2.2.2"],
+            ["logform", "npm:2.2.0"],
             ["node-notifier", "npm:10.0.0"],
             ["pinst", "npm:2.1.6"],
+            ["pkg-dir", "npm:5.0.0"],
             ["prettier", "npm:2.3.2"],
             ["prettier-standard", "npm:16.4.1"],
             ["rimraf", "npm:3.0.2"],
@@ -1916,6 +1918,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@yarnpkg/esbuild-plugin-pnp", [
+        ["npm:1.0.1-rc.1", {
+          "packageLocation": "./.yarn/cache/@yarnpkg-esbuild-plugin-pnp-npm-1.0.1-rc.1-dba0e4f33e-62de9b689c.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",
+          "packageDependencies": [
+            ["@yarnpkg/esbuild-plugin-pnp", "npm:1.0.1-rc.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.0.1-rc.1", {
+          "packageLocation": "./.yarn/__virtual__/@yarnpkg-esbuild-plugin-pnp-virtual-71d196f0e0/0/cache/@yarnpkg-esbuild-plugin-pnp-npm-1.0.1-rc.1-dba0e4f33e-62de9b689c.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",
+          "packageDependencies": [
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.0.1-rc.1"],
+            ["@types/esbuild", null],
+            ["esbuild", "npm:0.12.22"],
+            ["tslib", "npm:1.14.1"]
+          ],
+          "packagePeers": [
+            "@types/esbuild",
+            "esbuild"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["JSONStream", [
         ["npm:1.3.5", {
           "packageLocation": "./.yarn/cache/JSONStream-npm-1.3.5-1987f2e6dd-2605fa1242.zip/node_modules/JSONStream/",
@@ -3526,30 +3551,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/esbuild-npm-0.12.22-1ada2f21f7/node_modules/esbuild/",
           "packageDependencies": [
             ["esbuild", "npm:0.12.22"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["esbuild-node-externals", [
-        ["npm:1.3.0", {
-          "packageLocation": "./.yarn/cache/esbuild-node-externals-npm-1.3.0-de51fa4405-d4b216062b.zip/node_modules/esbuild-node-externals/",
-          "packageDependencies": [
-            ["esbuild-node-externals", "npm:1.3.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.3.0", {
-          "packageLocation": "./.yarn/__virtual__/esbuild-node-externals-virtual-42f98e87c8/0/cache/esbuild-node-externals-npm-1.3.0-de51fa4405-d4b216062b.zip/node_modules/esbuild-node-externals/",
-          "packageDependencies": [
-            ["esbuild-node-externals", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.3.0"],
-            ["@types/esbuild", null],
-            ["esbuild", "npm:0.12.22"],
-            ["find-up", "npm:5.0.0"],
-            ["tslib", "npm:2.1.0"]
-          ],
-          "packagePeers": [
-            "@types/esbuild",
-            "esbuild"
           ],
           "linkType": "HARD",
         }]
@@ -6774,17 +6775,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.17.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:4.29.2"],
             ["@typescript-eslint/parser", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:4.29.2"],
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.0.1-rc.1"],
             ["dotenv", "npm:10.0.0"],
             ["esbuild", "npm:0.12.22"],
-            ["esbuild-node-externals", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:1.3.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:8.3.0"],
             ["eslint-plugin-prettier", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:3.4.1"],
             ["husky", "npm:7.0.1"],
             ["jest", "virtual:2f8201bc1d8026c2cb8a2ebeb84e55ce0b96fc77be57822b617f62d02cc37fed990d9f0844eeeb73327fc3d13ce2c7cf3b640a163b7425ff1ea73b38f9678bdf#npm:27.0.6"],
             ["json-colorizer", "npm:2.2.2"],
+            ["logform", "npm:2.2.0"],
             ["node-notifier", "npm:10.0.0"],
             ["pinst", "npm:2.1.6"],
+            ["pkg-dir", "npm:5.0.0"],
             ["prettier", "npm:2.3.2"],
             ["prettier-standard", "npm:16.4.1"],
             ["rimraf", "npm:3.0.2"],
@@ -7327,6 +7330,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pkg-dir", "npm:4.2.0"],
             ["find-up", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/pkg-dir-npm-5.0.0-3ba6768b42-b167bb8dac.zip/node_modules/pkg-dir/",
+          "packageDependencies": [
+            ["pkg-dir", "npm:5.0.0"],
+            ["find-up", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8913,13 +8924,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-1.14.1-102499115e-dbe628ef87.zip/node_modules/tslib/",
           "packageDependencies": [
             ["tslib", "npm:1.14.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:2.1.0", {
-          "packageLocation": "./.yarn/cache/tslib-npm-2.1.0-81c9ac9b82-aa189c8179.zip/node_modules/tslib/",
-          "packageDependencies": [
-            ["tslib", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]

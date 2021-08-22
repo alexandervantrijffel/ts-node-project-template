@@ -1308,6 +1308,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/esbuild-plugin-pnp@npm:1.0.1-rc.1":
+  version: 1.0.1-rc.1
+  resolution: "@yarnpkg/esbuild-plugin-pnp@npm:1.0.1-rc.1"
+  dependencies:
+    tslib: ^1.13.0
+  peerDependencies:
+    esbuild: ">=0.8.36"
+  bin:
+    esbuild-plugin-pnp: ./lib/cli.js
+  checksum: 62de9b689c1817ed886665d7ec069cfaf1da56218391da2dfdcb6be7e181a6cb0df2eea198ce23538186e77485dd7576a640e02cbb6d3790e6f5676be3b18f51
+  languageName: node
+  linkType: hard
+
 "JSONStream@npm:^1.0.4":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
@@ -2640,18 +2653,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-node-externals@npm:1.3.0":
-  version: 1.3.0
-  resolution: "esbuild-node-externals@npm:1.3.0"
-  dependencies:
-    find-up: 5.0.0
-    tslib: 2.1.0
-  peerDependencies:
-    esbuild: ^0.12.0
-  checksum: d4b216062b3a15f625bee286dbb184da22e36265eb3cf49ec1fa9d63ef9e41d70d45dc1220395ccf6b96e8118b66bae9e89c495a02e8dead1562a10f703216b9
-  languageName: node
-  linkType: hard
-
 "esbuild@npm:0.12.22":
   version: 0.12.22
   resolution: "esbuild@npm:0.12.22"
@@ -3172,16 +3173,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-up@npm:5.0.0, find-up@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "find-up@npm:5.0.0"
-  dependencies:
-    locate-path: ^6.0.0
-    path-exists: ^4.0.0
-  checksum: 07955e357348f34660bde7920783204ff5a26ac2cafcaa28bace494027158a97b9f56faaf2d89a6106211a8174db650dd9f503f9c0d526b1202d5554a00b9095
-  languageName: node
-  linkType: hard
-
 "find-up@npm:^4.0.0, find-up@npm:^4.1.0":
   version: 4.1.0
   resolution: "find-up@npm:4.1.0"
@@ -3189,6 +3180,16 @@ __metadata:
     locate-path: ^5.0.0
     path-exists: ^4.0.0
   checksum: 4c172680e8f8c1f78839486e14a43ef82e9decd0e74145f40707cc42e7420506d5ec92d9a11c22bd2c48fb0c384ea05dd30e10dd152fefeec6f2f75282a8b844
+  languageName: node
+  linkType: hard
+
+"find-up@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "find-up@npm:5.0.0"
+  dependencies:
+    locate-path: ^6.0.0
+    path-exists: ^4.0.0
+  checksum: 07955e357348f34660bde7920783204ff5a26ac2cafcaa28bace494027158a97b9f56faaf2d89a6106211a8174db650dd9f503f9c0d526b1202d5554a00b9095
   languageName: node
   linkType: hard
 
@@ -5142,7 +5143,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"logform@npm:^2.2.0":
+"logform@npm:2.2.0, logform@npm:^2.2.0":
   version: 2.2.0
   resolution: "logform@npm:2.2.0"
   dependencies:
@@ -5532,17 +5533,19 @@ fsevents@^2.3.2:
     "@types/node": 14.17.11
     "@typescript-eslint/eslint-plugin": 4.29.2
     "@typescript-eslint/parser": 4.29.2
+    "@yarnpkg/esbuild-plugin-pnp": 1.0.1-rc.1
     dotenv: 10.0.0
     esbuild: 0.12.22
-    esbuild-node-externals: 1.3.0
     eslint: 7.32.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-prettier: 3.4.1
     husky: 7.0.1
     jest: 27.0.6
     json-colorizer: 2.2.2
+    logform: 2.2.0
     node-notifier: 10.0.0
     pinst: 2.1.6
+    pkg-dir: 5.0.0
     prettier: 2.3.2
     prettier-standard: 16.4.1
     rimraf: 3.0.2
@@ -6022,6 +6025,15 @@ fsevents@^2.3.2:
   dependencies:
     node-modules-regexp: ^1.0.0
   checksum: 091e232aac19f0049a681838fa9fcb4af824b5b1eb0e9325aa07b9d13245bfe3e4fa57a7766b9fdcd19cb89f2c15c688b46023be3047cb288023a0c079d3b2a3
+  languageName: node
+  linkType: hard
+
+"pkg-dir@npm:5.0.0":
+  version: 5.0.0
+  resolution: "pkg-dir@npm:5.0.0"
+  dependencies:
+    find-up: ^5.0.0
+  checksum: b167bb8dac7bbf22b1d5e30ec223e6b064b84b63010c9d49384619a36734caf95ed23ad23d4f9bd975e8e8082b60a83395f43a89bb192df53a7c25a38ecb57d9
   languageName: node
   linkType: hard
 
@@ -7450,14 +7462,7 @@ resolve@1.15.1:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.1.0":
-  version: 2.1.0
-  resolution: "tslib@npm:2.1.0"
-  checksum: aa189c8179de0427b0906da30926fd53c59d96ec239dff87d6e6bc831f608df0cbd6f77c61dabc074408bd0aa0b9ae4ec35cb2c15f729e32f37274db5730cb78
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^1.10.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
+"tslib@npm:^1.10.0, tslib@npm:^1.13.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
