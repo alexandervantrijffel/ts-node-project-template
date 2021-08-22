@@ -11,6 +11,7 @@ Features:
 - tsconfig project configuration for Node 14 projects
 - jest configuration for unit tests
 - multi-staged docker build
+- github actions configuration for build and test
 
 ### Getting started
 
