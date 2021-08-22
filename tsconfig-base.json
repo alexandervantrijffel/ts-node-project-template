@@ -1,19 +1,15 @@
 {
   "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "dist",
-    "sourceMap": true,
-    "declaration": true,
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -21,26 +17,10 @@
     "removeComments": false,
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
+    "sourceMap": true,
     "strictNullChecks": true,
     "stripInternal": true,
     "suppressImplicitAnyIndexErrors": true,
-    "baseUrl": ".",
-    "paths": {
-      "@structura/*": ["packages/*/src"]
-    },
-    "composite": true
-  },
-  "compileOnSave": true,
-  "references": [
-    {
-      "path": "./packages/logger-util"
-    },
-    {
-      "path": "./packages/application-lifecycle"
-    },
-    {
-      "path": "./packages/service-base"
-    }
-  ]
+    "baseUrl": "."
+  }
 }

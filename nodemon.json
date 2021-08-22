@@ -1,0 +1,6 @@
+{
+  "watch": [".build"],
+  "ext": "js,json,graphql",
+  "exec": "node .build/index.js",
+  "legacyWatch": true
+}
