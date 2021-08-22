@@ -1,0 +1,8 @@
+*
+!src/
+!esbuild.config.js
+!tsconfig.json
+!tsconfig-base.json
+!package.json
+!package-lock.json
+!yarn.lock
