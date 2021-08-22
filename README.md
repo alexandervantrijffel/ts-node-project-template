@@ -1,6 +1,6 @@
 # Typescript project template
 
-This template shows how to setup a project with support for Typescript and Node 14.
+This template shows how to setup a project based on Typescript and Node 14.
 
 Features:
 
