@@ -1,12 +1,10 @@
 FROM node:14-alpine AS builder
 WORKDIR /app
-COPY package*.json ./
-COPY yarn.lock ./
-COPY esbuild*.js ./
-RUN yarn install --frozen-lockfile
+COPY package*.json esbuild*.js yarn.lock* ./
+RUN if [[ -f ./yarn.lock ]] ; then yarn install --frozen-lockfile ; else npm ci --unsafe-perm ; fi
 COPY tsconfig*.json ./
 COPY src src
-RUN yarn build
+RUN npm run build
 
 FROM node:14-alpine
 ENV NODE_ENV=production

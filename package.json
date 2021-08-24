@@ -13,7 +13,7 @@
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
     "build": "node esbuild.config.js",
-    "serve": "(trap 'kill 0' SIGINT; yarn build --watch & nodemon)",
+    "serve": "(trap 'kill 0' SIGINT; node esbuild.config.js build --watch & nodemon)",
     "serve:watchexec": "todo: build poc with watchexec instead of nodemon ",
     "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
     "postinstall": "husky install",
