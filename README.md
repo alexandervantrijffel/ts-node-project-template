@@ -32,13 +32,13 @@ Run `yarn install` and `yarn serve` to run the application in development mode.
 
 Run `yarn test:watch` to run unit tests in watch mode.
 
-### Docker build
+## Docker build
 
 Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`.
 
 The resulting docker image is only 30MB. This achieved by making use of a multi-stage Docker build and using m03geek/alpine-node:pico-14 as the base image for the production build. This doesn't include npm which saves 33MB and node is packed with upx. This leads to a docker image that is around 88MB smaller compared to the official node:alpine-14 image.
 
-### Github actions
+## Github actions
 
 A Github actions workflow is included that builds the package and runs the tests. When that succeeds a docker image is built. Because node_modules are cached, both the build-test and build-docker jobs finish within a minute when the package dependencies can be retrieved from the cache.
 
