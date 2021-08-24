@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          version: 14
+          node-version: '14'
       # todo change to one of these when a lockfile is checked in
       # - run: npm ci --unsafe-perm
       # or 
