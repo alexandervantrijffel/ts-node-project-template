@@ -1,12 +1,19 @@
 FROM node:14-alpine AS builder
 WORKDIR /app
+
 COPY package*.json yarn.lock* ./
-RUN if [[ -f ./yarn.lock ]] ; then yarn install --frozen-lockfile ; else npm ci --unsafe-perm --verbose ; fi
+
+# Todo, after checking in either package-lock.json or yarn.lock
+# enable this line and remove npm install
+# RUN if [[ -f ./yarn.lock ]] ; then yarn install --frozen-lockfile ; else npm ci --unsafe-perm ; fi
+RUN npm install
+
 COPY tsconfig*.json esbuild*.js ./
 COPY src src
+
 RUN npm run build
 
-FROM m03geek/alpine-node:pico-14
+FROM node:14-alpine
 ENV NODE_ENV=production
 RUN apk add --no-cache tini
 WORKDIR /app
