@@ -42,4 +42,4 @@ The resulting docker image is only 30MB. This achieved by making use of a multi-
 
 A Github actions workflow is included that builds the package and runs the tests. When that succeeds a docker image is built. Because node_modules are cached, both the build-test and build-docker jobs finish within a minute when the package dependencies can be retrieved from the cache.
 
-Modify the workflow file at .github/workflows/main.yml for setting up pushing the Docker image to a registry.
+Modify the workflow file at `.github/workflows/main.yml` for setting up pushing the Docker image to a registry.
