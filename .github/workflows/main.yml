@@ -7,22 +7,67 @@ jobs:
   build-and-test:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+
+      - name: Prepare
+        id: prep
+        run: |
+          TAG=$(echo $GITHUB_SHA | head -c7)
+          IMAGE="my.docker.registry/alexandervantrijffel/ts-node-project-template"
+          echo ::set-output name=tagged_image::${IMAGE}:${TAG}
+          echo ::set-output name=tag::${TAG}
+      - name: Set up Docker Buildx
+        id: buildx
+        # Use the action from the master, as we've seen some inconsistencies with @v1
+        # Issue: https://github.com/docker/build-push-action/issues/286
+        uses: docker/setup-buildx-action@master
+        # Only worked with this option on 🤷
+        with:
+          install: true
+
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          # Key is named differently to avoid collision
+          key: ${{ runner.os }}-multi-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-multi-buildx
+
+      - name: Build production image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          builder: ${{ steps.buildx.outputs.name }}
+          file: Dockerfile
+          # Set the desired build target here
+          target: builder
+          push: false
+          tags: ${{ steps.prep.outputs.tagged_image }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          # Note the mode=max here
+          # More: https://github.com/moby/buildkit#--export-cache-options
+          # And: https://github.com/docker/buildx#--cache-tonametypetypekeyvalue
+          cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
+
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
       # todo change to one of these when a lockfile is checked in
       # - run: npm ci --unsafe-perm
       # or 
       # - run: yarn install --immutable
-      - run: npm install
-      - run: npm run build
-      - run: npm run test
+      # - run: npm install
+      # - run: npm run build
+      # - run: npm run test
 
-  build-docker:
-    needs: [build-and-test]
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@master
-      - run: npm install
-      - run: docker build .
+  # build-docker:
+  #   needs: [build-and-test]
+  #   runs-on: ubuntu-18.04
+  #   steps:
+  #     - uses: actions/checkout@master
+  #     - run: docker build .
