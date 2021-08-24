@@ -20,18 +20,26 @@ The build performance in **development build mode** increases significantly when
 
 ## Getting started
 
-### With npm  
+### With npm
+
 Run `npm install` and `npm run serve` to run the application in development mode.
 
 Run `npm run test:watch` to run unit tests in watch mode.
 
 ### With yarn
+
 Run `yarn install` and `yarn serve` to run the application in development mode.
 
 Run `yarn test:watch` to run unit tests in watch mode.
 
 ### Docker build
 
-Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`. 
+Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`.
 
-The resulting docker image is only 30MB. This achieved by making use of a multi-stage Docker build and using m03geek/alpine-node:pico-14 as the base image for the production build. This doesn't include npm which saves 33MB and node is packed with upx. This leads to a docker image that is around 88MB smaller than the official node:alpine-14 image.
+The resulting docker image is only 30MB. This achieved by making use of a multi-stage Docker build and using m03geek/alpine-node:pico-14 as the base image for the production build. This doesn't include npm which saves 33MB and node is packed with upx. This leads to a docker image that is around 88MB smaller compared to the official node:alpine-14 image.
+
+### Github actions
+
+A Github actions workflow is included that builds the package and runs the tests. When that succeeds a docker image is built. Because node_modules are cached, both the build-test and build-docker jobs finish within a minute when the package dependencies can be retrieved from the cache.
+
+Modify the workflow file at .github/workflows/main.yml for setting up pushing the Docker image to a registry.
