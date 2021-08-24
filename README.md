@@ -14,7 +14,7 @@ Features:
 - github actions configuration for build and test
 - both npm and yarn are supported
 
-The build performance in development mode increases significantly when using esbuild instead of the Typescript compiler tsc:
+The build performance in **development build mode** increases significantly when using esbuild instead of the Typescript compiler tsc:
 
 ![](https://user-images.githubusercontent.com/994409/130596241-cedf9860-f4ca-4cb3-8bc6-e4a59aad20c2.png)
 
@@ -32,4 +32,4 @@ Run `yarn test:watch` to run unit tests in watch mode.
 
 ### Docker build
 
-Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`.
+Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`. This is setup as a multi-stage Docker build and makes use of the Node Alpine Docker base image to produce a smaller Docker image. 
