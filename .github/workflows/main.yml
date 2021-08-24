@@ -11,7 +11,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           version: 14
-      - run: npm ci --unsafe-perm
+      # todo change to one of these when a lockfile is checked in
+      # - run: npm ci --unsafe-perm
+      # or 
+      # - run: yarn install --immutable
+      - run: npm install
       - run: npm run build
       - run: npm run test
 
