@@ -34,7 +34,7 @@ Run `yarn test:watch` to run unit tests in watch mode.
 
 ## Docker build
 
-Build the docker image with `docker build . -t ts-package-template` and run it with command `docker run ts-package-template`.
+Build the docker image with `docker build . -t ts-node-project-template` and run it with command `docker run ts-node-project-template`.
 
 The resulting docker image is only 30MB. This achieved by making use of a multi-stage Docker build and using m03geek/alpine-node:pico-14 as the base image for the production build. This doesn't include npm which saves 33MB and node is packed with upx. This leads to a docker image that is around 88MB smaller compared to the official node:alpine-14 image.
 
