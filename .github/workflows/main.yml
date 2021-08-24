@@ -12,6 +12,11 @@ jobs:
         with:
           node-version: '14'
 
+  build-docker:
+    needs: [build-and-test]
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
       - name: Prepare
         id: prep
         run: |
@@ -19,6 +24,7 @@ jobs:
           IMAGE="my.docker.registry/alexandervantrijffel/ts-node-project-template"
           echo ::set-output name=tagged_image::${IMAGE}:${TAG}
           echo ::set-output name=tag::${TAG}
+
       - name: Set up Docker Buildx
         id: buildx
         # Use the action from the master, as we've seen some inconsistencies with @v1
@@ -64,10 +70,3 @@ jobs:
       # - run: npm install
       # - run: npm run build
       # - run: npm run test
-
-  # build-docker:
-  #   needs: [build-and-test]
-  #   runs-on: ubuntu-18.04
-  #   steps:
-  #     - uses: actions/checkout@master
-  #     - run: docker build .
