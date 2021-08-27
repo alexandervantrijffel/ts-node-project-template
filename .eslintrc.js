@@ -1,13 +1,21 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module' // Allows for the use of imports
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parserOptions: {
+        project: ['./tsconfig.json']
+      }
+    }
+  ],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended' // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  // plugins: ['prettier'],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
@@ -30,6 +38,8 @@ module.exports = {
     ],
     '@typescript-eslint/no-explicit-any': ['error'],
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: true }],
-    '@typescript-eslint/no-shadow': ['warn']
+    '@typescript-eslint/no-shadow': ['warn'],
+    'no-throw-literal': 'off',
+    '@typescript-eslint/no-throw-literal': ['error']
   }
 }
