@@ -17,6 +17,7 @@ module.exports = {
     'plugin:prettier/recommended' // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   rules: {
+    eqeqeq: 'smart',
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     'newline-per-chained-call': 'error',
