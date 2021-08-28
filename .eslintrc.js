@@ -43,6 +43,13 @@ module.exports = {
     '@typescript-eslint/no-throw-literal': ['error'],
     // prefer es2015 import/export over namespaces and modules
     // only allow declare module for external modules in .d.ts files
-    '@typescript-eslint/no-namespace': ['error']
+    '@typescript-eslint/no-namespace': ['error'],
+    // prefer foo as string type assertion to <string>foo
+    // and
+    // prefer `const foo:someType = bar` over `const foo = bar as someType`
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }
+    ]
   }
 }
