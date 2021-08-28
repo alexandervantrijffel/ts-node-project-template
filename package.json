@@ -8,7 +8,7 @@
     ".build/**/*"
   ],
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint \"**/*.ts\"",
     "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
@@ -26,6 +26,10 @@
     "*.ts": [
       "eslint --fix",
       "git add"
+    ],
+    "*.tsx": [
+      "eslint --fix",
+      "git add"
     ]
   },
   "devDependencies": {
@@ -33,26 +37,29 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@tsconfig/node14": "^1.0.1",
     "@types/jest": "^27.0.1",
-    "@types/node": "^14.17.11",
+    "@types/node": "^14.17.12",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
-    "dotenv": "^10.0.0",
-    "esbuild": "^0.12.22",
+    "esbuild": "^0.12.24",
     "esbuild-node-externals": "^1.3.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^3.4.1",
-    "husky": "^7.0.1",
-    "jest": "^27.0.6",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
     "node-notifier": "^10.0.0",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
     "prettier-standard": "^16.4.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "json-colorizer": "^2.2.2",
     "winston": "^3.3.3"
   },
