@@ -8,7 +8,7 @@
     ".build/**/*"
   ],
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
     "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
