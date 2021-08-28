@@ -40,6 +40,9 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: true }],
     '@typescript-eslint/no-shadow': ['warn'],
     'no-throw-literal': 'off',
-    '@typescript-eslint/no-throw-literal': ['error']
+    '@typescript-eslint/no-throw-literal': ['error'],
+    // prefer es2015 import/export over namespaces and modules
+    // only allow declare module for external modules in .d.ts files
+    '@typescript-eslint/no-namespace': ['error']
   }
 }
