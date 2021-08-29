@@ -11,7 +11,7 @@ RUN npm install
 COPY tsconfig*.json esbuild*.js ./
 COPY src src
 
-RUN npm run build
+RUN npm run build:dist
 
 FROM node:14-alpine
 ENV NODE_ENV=production

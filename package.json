@@ -8,12 +8,13 @@
     ".build/**/*"
   ],
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
     "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
-    "build": "node esbuild.config.js",
-    "serve": "(trap 'kill 0' INT TERM; node esbuild.config.js build --watch & nodemon)",
+    "build": "node -r dotenv/config esbuild.config.js",
+    "build:dist": "node esbuild.config.js",
+    "serve": "(trap 'kill 0' INT TERM; node -r dotenv/config esbuild.config.js build --watch & nodemon)",
     "serve:watchexec": "todo: build poc with watchexec instead of nodemon ",
     "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
     "postinstall": "husky install",
