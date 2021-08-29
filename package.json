@@ -8,7 +8,7 @@
     ".build/**/*"
   ],
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "eslint --cache \"src/**/*.ts\"",
     "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "comment": ".js is omitted as this is continuously updated",
     "prebuild": "rimraf build/",
@@ -20,17 +20,16 @@
     "postinstall": "husky install",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --watch --verbose false --coverage --notify",
+    "prepare": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --fix",
-      "git add"
+      "eslint --cache --fix"
     ],
     "*.tsx": [
-      "eslint --fix",
-      "git add"
+      "eslint --cache --fix"
     ]
   },
   "devDependencies": {
@@ -51,6 +50,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
     "node-notifier": "^10.0.0",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",

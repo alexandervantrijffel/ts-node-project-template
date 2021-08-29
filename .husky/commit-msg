@@ -3,4 +3,4 @@
 
 bash | set -eEux
 
-yarn commitlint --edit $1
+npx commitlint --edit $1

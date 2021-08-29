@@ -1,6 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "pre-commit"
+
 bash | set -eEux
 
 if ! type golangci-lint 1>/dev/null; then
@@ -11,4 +13,9 @@ fi
 # scan for committed secrets
 docker run --pull always -v ${PWD}:/ts zricethezav/gitleaks:latest --path="/ts" -v
 
-yarn lint-staged
+if ! type npx 1>/dev/null; then
+  echo "please install npx, see https://nodejs.dev/learn/the-npx-nodejs-package-runner"
+  exit 127
+fi
+
+npx lint-staged
