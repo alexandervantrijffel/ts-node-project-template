@@ -3,4 +3,12 @@
 
 bash | set -eEux
 
+if ! type golangci-lint 1>/dev/null; then
+  echo "please install docker from docker.com"
+  exit 127
+fi
+
+# scan for committed secrets
+docker run --pull always -v ${PWD}:/ts zricethezav/gitleaks:latest --path="/ts" -v
+
 yarn lint-staged
