@@ -1,4 +1,4 @@
-export const envVar = (name: string, defaultValue?: string | number | undefined): string | number => {
+export default function envVar(name: string, defaultValue?: string | number | undefined): string | number {
   const val = process.env[name]
   if (typeof val === 'undefined') {
     if (defaultValue !== undefined) return defaultValue
@@ -6,5 +6,5 @@ export const envVar = (name: string, defaultValue?: string | number | undefined)
   }
   const stringVal = String(val).trim()
   const numVal = Number(stringVal)
-  return isNaN(numVal) ? stringVal : numVal
+  return Number.isNaN(numVal) ? stringVal : numVal
 }

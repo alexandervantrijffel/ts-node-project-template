@@ -22,7 +22,7 @@ build({
         onRebuild(error, result) {
           if (error) console.error('[esbuild] rebuild failed:', error)
           else console.log('[esbuild] rebuild succeeded')
-        }
+        },
       }
-    : undefined
+    : undefined,
 }).catch(() => process.exit(1))

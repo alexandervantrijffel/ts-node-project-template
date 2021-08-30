@@ -1,7 +1,6 @@
-
 name: Build & Test
 
-on: 
+on:
   push:
     branches:
       - main
@@ -88,7 +87,7 @@ jobs:
           mv /tmp/.buildx-cache-new /tmp/.buildx-cache
       # todo change to one of these when a lockfile is checked in
       # - run: npm ci --unsafe-perm
-      # or 
+      # or
       # - run: yarn install --immutable
       # - run: npm install
       # - run: npm run build

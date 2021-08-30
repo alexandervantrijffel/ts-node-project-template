@@ -29,7 +29,7 @@ function exposeFormat(name, requireFormat) {
     get() {
       return requireFormat()
     },
-    configurable: true
+    configurable: true,
   })
 }
 

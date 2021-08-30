@@ -1,4 +1,5 @@
-import { envVar } from './env'
+import envVar from './env'
+
 describe('envVar', () => {
   it('returns correct value for string', () => {
     const name = 'testIt'

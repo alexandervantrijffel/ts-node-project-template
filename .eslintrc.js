@@ -1,22 +1,24 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    ecmaVersion: 2021, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
   },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       parserOptions: {
-        project: ['./tsconfig.json']
-      }
-    }
+        project: ['./tsconfig.json'],
+      },
+    },
   ],
-  plugins: ['import'],
+  root: true,
+  plugins: ['@typescript-eslint', 'import'],
   extends: [
+    'airbnb-base',
     'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended' // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
   rules: {
     eqeqeq: 2, // error
@@ -29,15 +31,15 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': [
       'error',
       {
-        allowSingleExtends: true
-      }
+        allowSingleExtends: true,
+      },
     ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
         argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_' // https://github.com/typescript-eslint/typescript-eslint/issues/1054
-      }
+        varsIgnorePattern: '^_', // https://github.com/typescript-eslint/typescript-eslint/issues/1054
+      },
     ],
     '@typescript-eslint/no-explicit-any': ['error'],
     '@typescript-eslint/no-useless-constructor': 'error',
@@ -53,7 +55,7 @@ module.exports = {
     // prefer `const foo:someType = bar` over `const foo = bar as someType`
     '@typescript-eslint/consistent-type-assertions': [
       'error',
-      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' }
-    ]
-  }
+      { assertionStyle: 'as', objectLiteralTypeAssertions: 'never' },
+    ],
+  },
 }

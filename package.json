@@ -8,10 +8,9 @@
     ".build/**/*"
   ],
   "scripts": {
-    "lint": "eslint --cache \"src/**/*.ts\"",
-    "lint:withtest": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
-    "comment": ".js is omitted as this is continuously updated",
-    "prebuild": "rimraf build/",
+    "lint": "eslint --cache . --ext ts,tsx",
+    "format": "prettier --write .",
+    "prebuild": "rimraf .build/",
     "build": "node -r dotenv/config esbuild.config.js",
     "build:dist": "node esbuild.config.js",
     "serve": "(trap 'kill 0' INT TERM; node -r dotenv/config esbuild.config.js build --watch & nodemon)",
@@ -26,10 +25,12 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --cache --fix"
+      "eslint --cache . --ext ts,tsx --fix",
+      "prettier --write ."
     ],
     "*.tsx": [
-      "eslint --cache --fix"
+      "eslint --cache  . --ext ts,tsx --fix",
+      "prettier --write ."
     ]
   },
   "devDependencies": {

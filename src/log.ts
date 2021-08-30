@@ -12,14 +12,14 @@ const logger = winston.createLogger({
   format: format.combine(
     format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     format.metadata({ fillExcept: ['message', 'level', 'timestamp', 'label'] }),
-    winston.format.colorize()
+    winston.format.colorize(),
   ),
   transports: [
     new transports.Console({
-      format: format.combine(logFormat)
-    })
+      format: format.combine(logFormat),
+    }),
   ],
-  exitOnError: false
+  exitOnError: false,
 })
 
 export default logger
