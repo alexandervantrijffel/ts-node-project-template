@@ -43,3 +43,26 @@ The resulting Docker image is only 30MB. This achieved by making use of a multi-
 A Github Actions workflow is included that builds the package and runs the tests. When that succeeds a Docker image is built. Because node_modules are cached, both the build-test and build-docker jobs finish within a minute when the package dependencies can be retrieved from the cache.
 
 Modify the workflow file at `.github/workflows/main.yml` for setting up pushing the Docker image to a registry.
+
+## Danger JS
+
+With Danger JS checks are executed on PR's to validate the quality of the PR. The following checks are implemented in dangerfile.ts:
+
+- Do all tests succeed?
+- Does the PR title follow the !(conventional commits)[https://www.conventionalcommits.org/en/v1.0.0] standard?
+- Does the PR has a decription?
+
+This is reported on the pull request by Danger JS as comments:
+
+![jHRgpCs](https://user-images.githubusercontent.com/994409/131375208-09be3852-938d-4e08-958d-8d49e22f9e61.png)
+
+To allow Danger JS to add comments to the PR, take the following steps:
+
+- Create a Github Personal Access Token at https://github.com/settings/tokens/new with permission `public_repo`.
+- Add a secret to the repository with name `DANGER_TOKEN` and set the Personal Access Token as the value.
+
+To extend dangerfile.ts with additional rules, make sure you add the `danger` package to the project as dev dependency and run danger locally on a pull request with the following command:
+
+```
+DANGER_GITHUB_API_TOKEN=<github_personal_access_token> yarn danger pr https://github.com/<username>/<repository>/pull/<pull request number>
+```
