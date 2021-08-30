@@ -29,13 +29,21 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm i --save-dev danger
+          npm install
 
       - name: Build
         run: npm run build
 
       - name: Test
         run: npm run test -- --json --outputFile=jest-test-output.json
+
+      - name: Run Danger JS
+        run: npx danger ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
   build-docker:
     needs: [build-test]
