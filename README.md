@@ -52,6 +52,10 @@ With Danger JS checks are executed on PR's to validate the quality of the PR. Th
 - Does the PR title follow the !(conventional commits)[https://www.conventionalcommits.org/en/v1.0.0] standard?
 - Does the PR has a decription?
 
+This is reported on the pull request by Danger JS as comments:
+
+![jHRgpCs](https://user-images.githubusercontent.com/994409/131375208-09be3852-938d-4e08-958d-8d49e22f9e61.png)
+
 To allow Danger JS to add comments to the PR, take the following steps:
 
 - Create a Github Personal Access Token at https://github.com/settings/tokens/new with permission `public_repo`.
