@@ -66,3 +66,7 @@ To extend dangerfile.ts with additional rules, make sure you add the `danger` pa
 ```
 DANGER_GITHUB_API_TOKEN=<github_personal_access_token> yarn danger pr https://github.com/<username>/<repository>/pull/<pull request number>
 ```
+
+### Renovate
+
+This template contain a starter configuration for !(Renovate)[https://github.com/renovatebot/renovate]. Renovate automates dependency updates by creating pull requests. Install the Renovate app for Github from !(here)[https://github.com/apps/renovate].
