@@ -35,3 +35,13 @@ const bodyLength = danger.github.pr.body?.length
 if (!bodyLength || bodyLength < 10) {
   warn(':page_with_curl: Empty description - Please add some context for the reviewer.')
 }
+
+// Warn when PR size is large
+const bigPRThreshold = 600
+const codeChurn = danger.github.pr.additions + danger.github.pr.deletions
+if (codeChurn > bigPRThreshold) {
+  warn(`:exclamation: Big PR (${codeChurn} lines)`)
+  markdown(
+    `> (${codeChurn}) : Pull Request size seems relatively large. If Pull Request contains multiple changes, split each into separate PR will helps faster, easier review.`,
+  )
+}
