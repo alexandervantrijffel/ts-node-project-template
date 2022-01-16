@@ -63,7 +63,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
+    "dotenv": "^12.0.4",
     "json-colorizer": "^2.2.2",
     "winston": "^3.3.4"
   },
