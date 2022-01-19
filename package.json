@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
+    "@commitlint/cli": "^16.0.3",
     "@commitlint/config-conventional": "^16.0.0",
     "@tsconfig/node14": "^1.0.1",
     "@types/jest": "^27.4.0",
