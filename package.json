@@ -65,7 +65,7 @@
   "dependencies": {
     "dotenv": "16.0.1",
     "json-colorizer": "^2.2.2",
-    "winston": "^3.8.0"
+    "winston": "^3.8.1"
   },
   "engines": {
     "node": ">=v16.11.35"
