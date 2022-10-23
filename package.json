@@ -13,16 +13,15 @@
     "prebuild": "rimraf .build/",
     "build": "node -r dotenv/config esbuild.config.js",
     "build:dist": "node esbuild.config.js",
-    "serve": "(trap 'kill 0' INT TERM; node -r dotenv/config esbuild.config.js build --watch & nodemon)",
-    "serve:watchexec": "todo: build poc with watchexec instead of nodemon ",
     "start": "vite-node src/index.ts",
     "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
     "postinstall": "husky install",
     "test": "vitest",
-    "upgrade-all":"yarn-upgrade-all",
+    "upgrade-all": "yarn-upgrade-all",
     "prepare": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "serve": "vite-node --watch src/index.ts"
   },
   "lint-staged": {
     "*.ts": [
