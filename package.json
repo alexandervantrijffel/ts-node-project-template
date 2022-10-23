@@ -62,7 +62,7 @@
     "vite-node": "0.24.3"
   },
   "dependencies": {
-    "dotenv": "16.0.3",
+    "dotenv": "^16.0.3",
     "json-colorizer": "^2.2.2",
     "winston": "^3.8.2"
   },
