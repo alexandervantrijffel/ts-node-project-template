@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Test
-        run: npm run test -- --json --outputFile=jest-test-output.json
+        run: npx vitest run --reporter=json --outputFile=jest-test-output.json
 
       - name: Run Danger JS
         run: npx danger ci
