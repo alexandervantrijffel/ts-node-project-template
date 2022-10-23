@@ -1,4 +1,4 @@
-FROM node:14-alpine AS builder
+FROM node:16-alpine AS builder
 WORKDIR /app
 
 COPY package*.json yarn.lock* ./
@@ -13,7 +13,7 @@ COPY src src
 
 RUN npm run build:dist
 
-FROM node:14-alpine
+FROM node:16-alpine
 ENV NODE_ENV=production
 RUN apk add --no-cache tini
 WORKDIR /app
