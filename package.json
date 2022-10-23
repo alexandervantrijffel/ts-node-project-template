@@ -15,6 +15,7 @@
     "build:dist": "node esbuild.config.js",
     "serve": "(trap 'kill 0' INT TERM; node -r dotenv/config esbuild.config.js build --watch & nodemon)",
     "serve:watchexec": "todo: build poc with watchexec instead of nodemon ",
+    "start": "vite-node src/index.ts",
     "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
     "postinstall": "husky install",
     "test": "vitest",
@@ -57,7 +58,8 @@
     "prettier-standard": "^16.4.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.8.4",
-    "vitest": "0.24.3"
+    "vitest": "0.24.3",
+    "vite-node": "0.24.3"
   },
   "dependencies": {
     "dotenv": "16.0.3",
