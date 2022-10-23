@@ -1,6 +1,6 @@
 # Typescript Node project template
 
-This template contains a full project configuration for Typescript and Node 14 based projects.
+This template contains a full project configuration for Typescript and Node 16 based projects.
 
 Features:
 
@@ -8,8 +8,8 @@ Features:
 - `serve` script for development mode, this auto rebuilds and restarts the app on changes with nodemon and esbuild
 - extensive lint configuration for standardized, consistent code
 - Husky configuration for validating commit messages, lint validation and running tests
-- tsconfig project configuration for Node 14 projects based on [best practices for Node 14](https://github.com/tsconfig/bases/blob/main/bases/node14.json)
-- jest configuration for unit tests
+- tsconfig project configuration for Node 16 projects based on [best practices for Node 16](https://github.com/tsconfig/bases/blob/main/bases/node16.json)
+- jest configuration for unit tests, vitest for test execution [vitest features](https://vitest.dev/guide/features.html)
 - multi-staged Docker build with minimal Docker image size
 - Github Actions workflow for build, test and Docker build
 - both npm and yarn are supported
