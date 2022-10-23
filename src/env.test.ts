@@ -1,3 +1,4 @@
+import { describe, test, it, expect } from 'vitest'
 import envVar from './env'
 
 describe('envVar', () => {

@@ -17,8 +17,7 @@
     "serve:watchexec": "todo: build poc with watchexec instead of nodemon ",
     "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
     "postinstall": "husky install",
-    "test": "jest --config jest.config.js",
-    "test:watch": "jest --watch --verbose false --coverage --notify",
+    "test": "vitest",
     "prepare": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
@@ -37,7 +36,6 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@tsconfig/node16": "^1.0.3",
-    "@types/jest": "^29.2.0",
     "@types/node": "^16.11.35",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
@@ -52,15 +50,14 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
-    "jest": "^29.2.1",
     "lint-staged": "^13.0.3",
     "node-notifier": "^10.0.1",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "prettier-standard": "^16.4.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^29.0.3",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vitest": "0.24.3"
   },
   "dependencies": {
     "dotenv": "16.0.3",
