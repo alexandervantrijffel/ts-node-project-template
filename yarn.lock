@@ -5603,10 +5603,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-node@^0.24.4:
-  version "0.24.4"
-  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.24.4.tgz#ccd1267c5440d921f6d6b01ccd2cd179749c2bba"
-  integrity sha512-5HVGZ8wCTuKydpKbaqhg0PLqdTFoeCEPUeMz/mC8I3G2ilJOkDfMScBtut8suAd0x1BGcGGycasWY2PRyHK6ew==
+vite-node@^0.24.5:
+  version "0.24.5"
+  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.24.5.tgz#e51481d1b6b99602a910c72085c8c84e386fb8b0"
+  integrity sha512-+xnJaYu1i+2eCsycRO2QF1vxne13b2nL6nF+O8EzdF/X+ohPujysjwij3ZbX3AZ+j8HWYzjlRlKPdlHVyaNzwQ==
   dependencies:
     debug "^4.3.4"
     mlly "^0.5.16"
@@ -5625,10 +5625,10 @@ vite@^3.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.24.4:
-  version "0.24.4"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.4.tgz#ec6d876a000d9942b0bc0bbc54d54da38a879720"
-  integrity sha512-4ratHSyVEJPtBLV00uhL4Wj3Pmandc9rsxUkE0q9peNOfaOgGF4lEepdkaXGRi9AGFKr1GRVtjGOJ6Fp2lCpEg==
+vitest@^0.24.5:
+  version "0.24.5"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.5.tgz#ba23acdf4362e3299ca2a8a55afe3d2e7402b763"
+  integrity sha512-zw6JhPUHtLILQDe5Q39b/SzoITkG+R7hcFjuthp4xsi6zpmfQPOZcHodZ+3bqoWl4EdGK/p1fuMiEwdxgbGLOA==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
