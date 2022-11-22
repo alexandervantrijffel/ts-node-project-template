@@ -751,6 +751,11 @@ acorn@^8.4.1, acorn@^8.8.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
+acorn@^8.8.1:
+  version "8.8.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
+  integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -4004,15 +4009,15 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-mlly@^0.5.14, mlly@^0.5.16:
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/mlly/-/mlly-0.5.16.tgz#adb7d39fed81396a50b43173c88589de314015c7"
-  integrity sha512-LaJ8yuh4v0zEmge/g3c7jjFlhoCPfQn6RCjXgm9A0Qiuochq4BcuOxVfWmdnCoLTlg2MV+hqhOek+W2OhG0Lwg==
+mlly@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mlly/-/mlly-1.0.0.tgz#d38ca6e33ab89b60654f71ef08931d51e83d3569"
+  integrity sha512-QL108Hwt+u9bXdWgOI0dhzZfACovn5Aen4Xvc8Jasd9ouRH4NjnrXEiyP3nVvJo91zPlYjVRckta0Nt2zfoR6g==
   dependencies:
-    acorn "^8.8.0"
-    pathe "^0.3.8"
-    pkg-types "^0.3.5"
-    ufo "^0.8.5"
+    acorn "^8.8.1"
+    pathe "^1.0.0"
+    pkg-types "^1.0.0"
+    ufo "^1.0.0"
 
 mri@^1.1.5:
   version "1.2.0"
@@ -4456,10 +4461,10 @@ pathe@^0.2.0:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
   integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
 
-pathe@^0.3.7, pathe@^0.3.8:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.3.9.tgz#4baff768f37f03e3d9341502865fb93116f65191"
-  integrity sha512-6Y6s0vT112P3jD8dGfuS6r+lpa0qqNrLyHPOwvXMnyNTQaYiwgau2DP3aNDsR13xqtGj7rrPo+jFUATpU6/s+g==
+pathe@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.0.0.tgz#135fc11464fc57c84ef93d5c5ed21247e24571df"
+  integrity sha512-nPdMG0Pd09HuSsr7QOKUXO2Jr9eqaDiZvDwdyIhNG5SHYujkQHYKDfGQkulBxvbDHz8oHLsTgKN86LSwYzSHAg==
 
 pathval@^1.1.1:
   version "1.1.1"
@@ -4513,14 +4518,14 @@ pinst@^3.0.0:
   resolved "https://registry.yarnpkg.com/pinst/-/pinst-3.0.0.tgz#80dec0a85f1f993c6084172020f3dbf512897eec"
   integrity sha512-cengSmBxtCyaJqtRSvJorIIZXMXg+lJ3sIljGmtBGUVonMnMsVJbnzl6jGN1HkOWwxNuJynCJ2hXxxqCQrFDdw==
 
-pkg-types@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-0.3.5.tgz#ea01c7cf28da9e4c5b85de9b250de4b3dc2e9abc"
-  integrity sha512-VkxCBFVgQhNHYk9subx+HOhZ4jzynH11ah63LZsprTKwPCWG9pfWBlkElWFbvkP9BVR0dP1jS9xPdhaHQNK74Q==
+pkg-types@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-1.0.1.tgz#25234407f9dc63409af45ced9407625ff446a761"
+  integrity sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==
   dependencies:
     jsonc-parser "^3.2.0"
-    mlly "^0.5.14"
-    pathe "^0.3.7"
+    mlly "^1.0.0"
+    pathe "^1.0.0"
 
 please-upgrade-node@^3.1.1:
   version "3.2.0"
@@ -5646,10 +5651,10 @@ typescript@^4.9.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.3.tgz#3aea307c1746b8c384435d8ac36b8a2e580d85db"
   integrity sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==
 
-ufo@^0.8.5:
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.8.6.tgz#c0ec89bc0e0c9fa59a683680feb0f28b55ec323b"
-  integrity sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==
+ufo@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.0.0.tgz#eb64f4c8797d6aa6c710a836abab0bade9d11ca6"
+  integrity sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==
 
 uglify-js@^3.1.4:
   version "3.17.4"
@@ -5805,13 +5810,13 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-node@^0.25.2:
-  version "0.25.2"
-  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.25.2.tgz#754d140c5c0d0aaed6c773c409e63228479e26f5"
-  integrity sha512-SKnqkf8HmaCn+iBS3U7rmm8Awe9MNt5KWZwAA2aN6LsbtQRdiQr/CJMyTORYDV+Z6aGt8k806KPwZjTekYR3uQ==
+vite-node@^0.25.3:
+  version "0.25.3"
+  resolved "https://registry.yarnpkg.com/vite-node/-/vite-node-0.25.3.tgz#2789f0fe51613ed7fa33028e8a49e94cbc97ebe2"
+  integrity sha512-0TyDFASTLJUOPRE5e5isyXXgM/fbTD6D37NKduk718l+Ih9FSwqaaHT5f0pIkJMXzyYT6zo4b4FA6pnGdoky3A==
   dependencies:
     debug "^4.3.4"
-    mlly "^0.5.16"
+    mlly "^1.0.0"
     pathe "^0.2.0"
     source-map "^0.6.1"
     source-map-support "^0.5.21"
@@ -5829,10 +5834,10 @@ vite@^3.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.25.2:
-  version "0.25.2"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.25.2.tgz#b8afd2ad4ea3c759f383792b5c3a2998ceb15fcc"
-  integrity sha512-qqkzfzglEFbQY7IGkgSJkdOhoqHjwAao/OrphnHboeYHC5JzsVFoLCaB2lnAy8krhj7sbrFTVRApzpkTOeuDWQ==
+vitest@^0.25.3:
+  version "0.25.3"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.25.3.tgz#4e5ed481e4da6a0ce014bdb71dfc9661fd62b722"
+  integrity sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
