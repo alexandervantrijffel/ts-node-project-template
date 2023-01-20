@@ -1,8 +1,7 @@
 import winston, { format, transports } from 'winston'
 import colorize from 'json-colorizer'
 
-type LogRecord = Record<string, unknown>
-const logFormat = format.printf((info: LogRecord) => {
+const logFormat = format.printf((info: { timestamp: unknown; level: unknown; message: unknown; metadata: {} }) => {
   return `${info.timestamp} ${info.level}: ${info.message} ${
     !!info.metadata && Object.keys(info.metadata).length > 0 ? colorize(JSON.stringify(info.metadata, null, 2)) : ''
   } `
