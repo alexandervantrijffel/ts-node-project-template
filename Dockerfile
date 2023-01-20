@@ -1,4 +1,4 @@
-FROM node:16-alpine AS builder
+FROM node:18-alpine AS builder
 WORKDIR /app
 
 COPY package*.json yarn.lock* ./
@@ -11,9 +11,9 @@ RUN npm install
 COPY tsconfig*.json esbuild*.js ./
 COPY src src
 
-RUN npm run build:dist
+RUN npm run build
 
-FROM node:16-alpine
+FROM node:18-alpine
 ENV NODE_ENV=production
 RUN apk add --no-cache tini
 WORKDIR /app

@@ -5,7 +5,7 @@ const res = esbuild.buildSync({
   minify: true,
   sourcemap: true,
   format: 'esm',
-  outfile: '.build/output.js',
+  outfile: '.build/index.js',
   platform: 'node',
   external: ['node'],
   // external: ['react', 'react-dom'],
