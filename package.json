@@ -59,6 +59,7 @@
     "rimraf": "^4.1.1",
     "tsx": "^3.12.2",
     "typescript": "*",
+    "vite": "4.0.4",
     "vitest": "^0.27.2",
     "yarn-upgrade-all": "^0.7.2"
   },
