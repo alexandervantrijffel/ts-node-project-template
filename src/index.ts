@@ -6,4 +6,4 @@ import envVar from './env'
 
 dotenv.config()
 
-logger.info(`Hello world! Running in '${envVar('NODE_ENV', 'development')}' mode`)
+logger.info(`Hello world! Running in '${envVar('NODE_ENV', 'development')}' mode.`)

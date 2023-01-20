@@ -1,7 +1,7 @@
 import logger from './log'
 
 process.on('unhandledRejection', (reason: Error, _p: Promise<unknown>) => {
-  // since we already have fallback handler for unhandled errors
+  // since we already have a fallback handler for unhandled errors
   // we'll rethrow it here
   throw reason
 })
