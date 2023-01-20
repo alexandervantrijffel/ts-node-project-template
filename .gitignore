@@ -54,3 +54,6 @@ build
 
 # docker secrets
 **/*_secret
+
+.pnp.cjs
+.pnp.loader.mjs
