@@ -18,7 +18,7 @@ describe('envVar', () => {
   })
   it('throws error for non-existent variable', () => {
     const name = 'shouldNotExist'
-    return expect(envVar.bind(null, name)).toThrowError(`environment variable '${name}'`)
+    expect(envVar.bind(null, name)).toThrowError(`environment variable '${name}'`)
   })
 })
 
