@@ -28,6 +28,8 @@ Run `npm run test:watch` to run unit tests in watch mode.
 
 ### With yarn
 
+Install yarn v3.3.1 or later.
+
 Run `yarn install` and `yarn serve` to run the application in development mode.
 
 Run `yarn test:watch` to run unit tests in watch mode.
