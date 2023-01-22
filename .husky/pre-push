@@ -2,3 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint && npx vitest run
+
+# scan for committed secrets
+docker run --rm --pull always -v ${PWD}:/ts zricethezav/gitleaks:latest detect --source="/ts" -v
+
