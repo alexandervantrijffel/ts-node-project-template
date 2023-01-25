@@ -1,6 +1,6 @@
 import esbuild from 'esbuild'
 const res = esbuild.buildSync({
-  entryPoints: ['src/'],
+  entryPoints: ['./src/'],
   bundle: true,
   minify: true,
   sourcemap: true,
