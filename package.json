@@ -56,7 +56,7 @@
     "pinst": "^3.0.0",
     "prettier": "^2.8.4",
     "prettier-standard": "^16.4.1",
-    "rimraf": "^4.3.0",
+    "rimraf": "^4.4.0",
     "tsx": "^3.12.3",
     "typescript": "*",
     "vite": "4.1.4",
