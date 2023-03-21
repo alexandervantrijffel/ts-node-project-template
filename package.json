@@ -57,7 +57,7 @@
     "prettier": "^2.8.5",
     "prettier-standard": "^16.4.1",
     "rimraf": "^4.4.0",
-    "tsx": "^3.12.5",
+    "tsx": "^3.12.6",
     "typescript": "*",
     "vite": "4.2.0",
     "vitest": "^0.29.7",
