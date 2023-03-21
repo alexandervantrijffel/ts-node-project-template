@@ -36,7 +36,7 @@
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@tsconfig/node18": "^1.0.1",
-    "@types/node": "^18.14.6",
+    "@types/node": "^18.15.5",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "danger": "^11.2.4",
@@ -69,6 +69,6 @@
     "winston": "^3.8.2"
   },
   "engines": {
-    "node": ">=v18.14.2"
+    "node": ">=v18.15.0"
   }
 }
