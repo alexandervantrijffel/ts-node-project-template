@@ -1,14 +1,15 @@
 # Typescript Node project template
 
-This template contains a full project configuration for Typescript and Node 16 based projects.
+This template contains a full project configuration for Typescript and Node 18 based projects.
 
 Features:
 
-- `build` script that builds a single, minified, tree shaked .build/index.js bundle file that does not depend on external packages from node_modules. It comes with a Typescript sourcemap and is built with esbuild
-- `serve` script for development mode, this auto rebuilds and restarts the app on changes with node-vite
+- ESM module
+- `build` script that builds a single, minified, tree shaked .build/index.js bundle file that does not depend on external packages from node_modules. It comes with a Typescript sourcemap and is built with esbuild-kit/tsx
+- `start:watch` script for development mode, this auto rebuilds and restarts the app on changes with`tsx watch`
 - extensive lint configuration for standardized, consistent code
 - Husky configuration for validating commit messages, lint validation and running tests
-- tsconfig project configuration for Node 16 projects based on [best practices for Node 16](https://github.com/tsconfig/bases/blob/main/bases/node16.json)
+- tsconfig project configuration for Node 18 projects based on [best practices for Node 18](https://github.com/tsconfig/bases/blob/main/bases/node16.json)
 - jest configuration for unit tests, vitest for test execution [vitest features](https://vitest.dev/guide/features.html)
 - multi-staged Docker build with minimal Docker image size
 - Github Actions workflow for build, test and Docker build
