@@ -18,7 +18,7 @@
     "postinstall": "husky install",
     "start": "tsx src/index.ts",
     "start:watch": "tsx watch src/index.ts",
-    "start:debug": "DEBUG=express:* nodemon --inspect 'src/index.ts'",
+    "start:debug": "node --inspect  --loader tsx 'src/index.ts'",
     "test": "vitest",
     "upgrade-all": "yarn-upgrade-all"
   },
