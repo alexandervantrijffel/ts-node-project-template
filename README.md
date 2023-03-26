@@ -5,7 +5,7 @@ This template contains a full project configuration for Typescript and Node 18 b
 Features:
 
 - ESM module
-- `build` script that builds a single, minified, tree shaked .build/index.js bundle file that does not depend on external packages from node_modules. It comes with a Typescript sourcemap and is built with esbuild-kit/tsx
+- `build` script that builds a single, minified, tree shaked .build/index.mjs bundle file that does not depend on external packages from node_modules. It comes with a Typescript sourcemap and is built with esbuild-kit/tsx
 - `start:watch` script for development mode, this auto rebuilds and restarts the app on changes with`tsx watch`
 - extensive lint configuration for standardized, consistent code
 - Husky configuration for validating commit messages, lint validation and running tests
@@ -29,7 +29,7 @@ Run `npm run test:watch` to run unit tests in watch mode.
 
 ### With yarn
 
-Install yarn v3.3.1 or later.
+Install yarn v1.22.19 or later.
 
 Run `yarn install` and `yarn serve` to run the application in development mode.
 
