@@ -55,5 +55,15 @@ build
 # docker secrets
 **/*_secret
 
-.pnp.cjs
-.pnp.loader.mjs
+.pnp.*
+/.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn/install-state.gz
+yarn-debug.log*
+yarn-error.log*
