@@ -5,8 +5,11 @@ const res = esbuild.buildSync({
   minify: true,
   sourcemap: true,
   format: 'esm',
-  outfile: '.build/index.js',
+  outfile: '.build/index.mjs',
   platform: 'node',
   external: ['node'],
-  // external: ['react', 'react-dom'],
+  banner: {
+    js: "import { createRequire } from 'module'; const require = createRequire(import.meta.url);",
+  },
+  // external: ['react', 'react-dom', 'ejs', 'express'],
 })

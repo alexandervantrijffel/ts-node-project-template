@@ -2,7 +2,7 @@
   "name": "new-empty-ts-project",
   "version": "0.0.1",
   "license": "MIT",
-  "main": ".build/index.js",
+  "main": ".build/index.mjs",
   "files": [
     ".build/**/*"
   ],
