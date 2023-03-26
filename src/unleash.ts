@@ -1,4 +1,4 @@
-import { initialize, Context } from 'unleash-client'
+import { initialize, type Context } from 'unleash-client'
 import logger from './log'
 import envVar from './env'
 
