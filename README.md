@@ -9,7 +9,7 @@ Features:
 - `start:watch` script for development mode, this auto rebuilds and restarts the app on changes with`tsx watch`
 - extensive lint configuration for standardized, consistent code
 - Husky configuration for validating commit messages, lint validation and running tests
-- tsconfig project configuration for Node 18 projects based on [best practices for Node 18](https://github.com/tsconfig/bases/blob/main/bases/node16.json)
+- tsconfig project configuration for Node 18 projects based on [best practices for Node 18](https://github.com/tsconfig/bases/blob/main/bases/node18.json)
 - jest configuration for unit tests, vitest for test execution [vitest features](https://vitest.dev/guide/features.html)
 - multi-staged Docker build with minimal Docker image size
 - Github Actions workflow for build, test and Docker build
