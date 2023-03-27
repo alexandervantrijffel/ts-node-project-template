@@ -5,7 +5,6 @@
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "moduleResolution": "node",
     "declaration": true,
     "emitDeclarationOnly": true,
     "emitDecoratorMetadata": true,
