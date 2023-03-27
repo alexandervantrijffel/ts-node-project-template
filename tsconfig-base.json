@@ -18,6 +18,7 @@
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "sourceMap": true,
+    "strictFunctionTypes": true,
     "strictNullChecks": true,
     "stripInternal": true,
     "suppressImplicitAnyIndexErrors": true,
