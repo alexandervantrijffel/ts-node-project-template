@@ -17,7 +17,7 @@ WORKDIR /app
 RUN chown node:node .
 USER node
 
-COPY --from=builder /app/.build/ .
+COPY --from=builder /app/dist/ .
 
 EXPOSE 3000
 
