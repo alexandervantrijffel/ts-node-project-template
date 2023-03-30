@@ -58,7 +58,7 @@
     "prettier-standard": "^16.4.1",
     "rimraf": "^4.4.1",
     "tsx": "^3.12.6",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.3",
     "vite": "^4.2.1",
     "vitest": "^0.29.8",
     "yarn-upgrade-all": "^0.7.2"
