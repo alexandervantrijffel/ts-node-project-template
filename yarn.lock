@@ -904,10 +904,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node18@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@tsconfig/node18@npm:1.0.3"
-  checksum: 101b12f59fde8693269fc22fe22ed93ce5006a6fdd550ff25f39c9324acea48a0e83fd93d302b719e75467c89a963bf79cdd2017aeb6db5d0cfb805a86ab7f23
+"@tsconfig/node18@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@tsconfig/node18@npm:2.0.0"
+  checksum: 83c44d666c0d4b4f2f1da60b50fec48acdd85476c590cdc4d13f3332b9d9fef1ca9818f9d5a01c24f56f532335dc5d22c79b1afc9a9eed883e07f4047615148c
   languageName: node
   linkType: hard
 
@@ -6114,7 +6114,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.6.1
     "@commitlint/config-conventional": ^17.6.1
-    "@tsconfig/node18": ^1.0.3
+    "@tsconfig/node18": ^2.0.0
     "@types/node": ^18.15.11
     "@typescript-eslint/eslint-plugin": ^5.59.0
     "@typescript-eslint/parser": ^5.59.0
