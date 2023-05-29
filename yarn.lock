@@ -6134,7 +6134,7 @@ __metadata:
     typescript: ^5.0.4
     vite: ^4.3.9
     vitest: ^0.31.1
-    winston: ^3.8.2
+    winston: ^3.9.0
     yarn-upgrade-all: ^0.7.2
   languageName: unknown
   linkType: soft
@@ -9004,7 +9004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"winston@npm:^3.8.2":
+"winston@npm:^3.9.0":
   version: 3.9.0
   resolution: "winston@npm:3.9.0"
   dependencies:
