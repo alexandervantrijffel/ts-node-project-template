@@ -64,7 +64,7 @@
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.4",
     "json-colorizer": "^2.2.2",
     "winston": "^3.9.0"
   },

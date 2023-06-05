@@ -2640,7 +2640,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.3":
+"dotenv@npm:^16.1.4":
   version: 16.1.4
   resolution: "dotenv@npm:16.1.4"
   checksum: c1b2e13df4d374a6a29e134c56c7b040ba20500677fe8b9939ea654f3b3badb9aaa0b172e40e4dfa1233a4177dbb8fb79d84cc79a50ac9c9641fe2ad98c14876
@@ -6114,7 +6114,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.59.8
     danger: ^11.2.6
     danger-plugin-jest: ^1.3.0
-    dotenv: ^16.0.3
+    dotenv: ^16.1.4
     eslint: ^8.42.0
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^17.0.0
