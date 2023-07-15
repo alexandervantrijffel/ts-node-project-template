@@ -3312,32 +3312,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard-with-typescript@npm:^36.0.1":
-  version: 36.0.1
-  resolution: "eslint-config-standard-with-typescript@npm:36.0.1"
+"eslint-config-standard-with-typescript@npm:^36.1.0":
+  version: 36.1.0
+  resolution: "eslint-config-standard-with-typescript@npm:36.1.0"
   dependencies:
     "@typescript-eslint/parser": ^5.50.0
-    eslint-config-standard: 17.0.0
+    eslint-config-standard: 17.1.0
   peerDependencies:
     "@typescript-eslint/eslint-plugin": ^5.50.0
     eslint: ^8.0.1
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-n: ^15.0.0
+    eslint-plugin-n: "^15.0.0 || ^16.0.0 "
     eslint-plugin-promise: ^6.0.0
     typescript: "*"
-  checksum: 06766c2fb056e2e192fddbeaccead940c0ff199cb37238abbdccc8baa591b8f2680f55ab939eda523355bb5f01c8eda718557b7536f792ffcb4562b14ad8592f
+  checksum: 07c9dfbd6b76b18b1ebc32e06602c543d85ae6f18489ab29823f1642c0e15987ce037d74574b27fd1c6603fcddf7f90092977fe8ad08815d83e077e8a704da6f
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:17.0.0":
-  version: 17.0.0
-  resolution: "eslint-config-standard@npm:17.0.0"
+"eslint-config-standard@npm:17.1.0":
+  version: 17.1.0
+  resolution: "eslint-config-standard@npm:17.1.0"
   peerDependencies:
     eslint: ^8.0.1
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-n: ^15.0.0
+    eslint-plugin-n: "^15.0.0 || ^16.0.0 "
     eslint-plugin-promise: ^6.0.0
-  checksum: dc0ed51e186fd963ff2c0819d33ef580afce11b11036cbcf5e74427e26e514c2b1be96b8ffe74fd2fd00263554a0d49cc873fcf76f17c3dfdba614b45d7fd7da
+  checksum: 8ed14ffe424b8a7e67b85e44f75c46dc4c6954f7c474c871c56fb0daf40b6b2a7af2db55102b12a440158b2be898e1fb8333b05e3dbeaeaef066fdbc863eaa88
   languageName: node
   linkType: hard
 
@@ -6458,7 +6458,7 @@ __metadata:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^17.1.0
     eslint-config-prettier: ^8.8.0
-    eslint-config-standard-with-typescript: ^36.0.1
+    eslint-config-standard-with-typescript: ^36.1.0
     eslint-plugin-import: ^2.27.5
     eslint-plugin-n: ^15.7.0
     eslint-plugin-prettier: ^5.0.0
