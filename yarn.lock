@@ -1262,7 +1262,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.50.0, @typescript-eslint/parser@npm:^5.62.0":
+"@typescript-eslint/parser@npm:^5.52.0, @typescript-eslint/parser@npm:^5.62.0":
   version: 5.62.0
   resolution: "@typescript-eslint/parser@npm:5.62.0"
   dependencies:
@@ -3269,20 +3269,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard-with-typescript@npm:^36.1.1":
-  version: 36.1.1
-  resolution: "eslint-config-standard-with-typescript@npm:36.1.1"
+"eslint-config-standard-with-typescript@npm:^37.0.0":
+  version: 37.0.0
+  resolution: "eslint-config-standard-with-typescript@npm:37.0.0"
   dependencies:
-    "@typescript-eslint/parser": ^5.50.0
+    "@typescript-eslint/parser": ^5.52.0
     eslint-config-standard: 17.1.0
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.50.0
+    "@typescript-eslint/eslint-plugin": ^5.52.0
     eslint: ^8.0.1
     eslint-plugin-import: ^2.25.2
     eslint-plugin-n: "^15.0.0 || ^16.0.0 "
     eslint-plugin-promise: ^6.0.0
     typescript: "*"
-  checksum: 6149e22a0a8a77a7c1ef8c4b0c3c8e67bd70e8ad44ab3dedf7901de56a0e7922fbb7bf3d4e2f93a13dbd1ccac117ac3159629f47f07e9df3497d6fc6f3529990
+  checksum: 2aecb2be793d62484b4797f484c575edd887ef0ad9c7d8bc30f4adf22d59f3cbe37f1f4e3fb9a35a243a99b7686c3130de81df982d18b0870403062c817c7475
   languageName: node
   linkType: hard
 
@@ -6395,7 +6395,7 @@ __metadata:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^17.1.0
     eslint-config-prettier: ^8.8.0
-    eslint-config-standard-with-typescript: ^36.1.1
+    eslint-config-standard-with-typescript: ^37.0.0
     eslint-plugin-import: ^2.27.5
     eslint-plugin-n: ^16.0.1
     eslint-plugin-prettier: ^5.0.0
