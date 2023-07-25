@@ -2549,9 +2549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^11.2.6":
-  version: 11.2.6
-  resolution: "danger@npm:11.2.6"
+"danger@npm:^11.2.7":
+  version: 11.2.7
+  resolution: "danger@npm:11.2.7"
   dependencies:
     "@gitbeaker/node": ^21.3.0
     "@octokit/rest": ^18.12.0
@@ -2600,7 +2600,7 @@ __metadata:
     danger-process: distribution/commands/danger-process.js
     danger-reset-status: distribution/commands/danger-reset-status.js
     danger-runner: distribution/commands/danger-runner.js
-  checksum: 606b92bce7618edc5d7d1500c5108d57ee86fd9d81d385c45b9acba5aac46e97c81c0687392ad117c296a581afb55c8e729d8ba283b770f1c6e7747be07fdaf4
+  checksum: b8d224b4055926172255bc5c865f773bc1d54c9c699eb0ce1dbd3b77836b8f6f3502eb8c58628c6bed71461efb1122faca649d9991a157ecae080404a244d29a
   languageName: node
   linkType: hard
 
@@ -6384,7 +6384,7 @@ __metadata:
     "@types/node": ^18.16.18
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
-    danger: ^11.2.6
+    danger: ^11.2.7
     danger-plugin-jest: ^1.3.0
     dotenv: ^16.3.1
     eslint: ^8.45.0
