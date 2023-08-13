@@ -52,7 +52,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^13.3.0",
     "pinst": "^3.0.0",
     "prettier": "^3.0.1",
     "prettier-standard": "^16.4.1",
