@@ -60,7 +60,7 @@
     "tsx": "^3.12.10",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
-    "vitest": "^0.34.4",
+    "vitest": "^0.34.5",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
