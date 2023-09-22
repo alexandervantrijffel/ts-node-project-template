@@ -544,39 +544,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gitbeaker/core@npm:^21.7.0":
-  version: 21.7.0
-  resolution: "@gitbeaker/core@npm:21.7.0"
+"@gitbeaker/core@npm:^35.8.1":
+  version: 35.8.1
+  resolution: "@gitbeaker/core@npm:35.8.1"
   dependencies:
-    "@gitbeaker/requester-utils": ^21.7.0
-    form-data: ^3.0.0
+    "@gitbeaker/requester-utils": ^35.8.1
+    form-data: ^4.0.0
     li: ^1.3.0
+    mime: ^3.0.0
+    query-string: ^7.0.0
     xcase: ^2.0.1
-  checksum: 2f196849855e2d89573e49aed58d5f792833196b1a32cb2d0c84e7b00b6e6bd54f001498a598486fc226daec6cbbdeb739ffeb38f54dc1ba5c8ed14c8f035180
+  checksum: 8fc7b8d32a2162b70fd8e8ec4e019a3654da3fd1bcb7204b5030e8c9b4af52f4e7addafcd5503042e31dd4e4e3bdd7f8245dd963c77427d4471ab2e331266cf7
   languageName: node
   linkType: hard
 
-"@gitbeaker/node@npm:^21.3.0":
-  version: 21.7.0
-  resolution: "@gitbeaker/node@npm:21.7.0"
+"@gitbeaker/node@npm:^35.8.1":
+  version: 35.8.1
+  resolution: "@gitbeaker/node@npm:35.8.1"
   dependencies:
-    "@gitbeaker/core": ^21.7.0
-    "@gitbeaker/requester-utils": ^21.7.0
-    form-data: ^3.0.0
-    got: ^11.1.4
+    "@gitbeaker/core": ^35.8.1
+    "@gitbeaker/requester-utils": ^35.8.1
+    delay: ^5.0.0
+    got: ^11.8.3
     xcase: ^2.0.1
-  checksum: 397c5c1227faba1dee4c2c65cd4651014e80701922a3bd24ebd8567a9aa05c848b253583c8ca498e328177ae30fd6c29489daf43d20786e88ab40b6c0df15b05
+  checksum: b9439c8dadadc6c1c19c4528543226e18dffdff4bdb00904b18a0621af62f0449e203a500ec3f27f386c7a02adc373585e06a1f6e0f93b6b34a0be1ced857e92
   languageName: node
   linkType: hard
 
-"@gitbeaker/requester-utils@npm:^21.7.0":
-  version: 21.7.0
-  resolution: "@gitbeaker/requester-utils@npm:21.7.0"
+"@gitbeaker/requester-utils@npm:^35.8.1":
+  version: 35.8.1
+  resolution: "@gitbeaker/requester-utils@npm:35.8.1"
   dependencies:
-    form-data: ^3.0.0
-    query-string: ^6.12.1
+    form-data: ^4.0.0
+    qs: ^6.10.1
     xcase: ^2.0.1
-  checksum: 3e0bc40e6ae2d3492aaea632b8963fa89785d74eed434122a64e7d07069fafd2fbb0b0f5eddc309a1f7a8907de2cf0a591ff8f94176889814e713e79b8cd6a6b
+  checksum: c3c94ad90dab481887380f5bcff0416c1e1eee935fc3ca4f12d8db83d85c5f0d47f7f35cee6f2b05491bda99c03fb7eb88b849c986822eae3b1bfc26641ec899
   languageName: node
   linkType: hard
 
@@ -2425,11 +2427,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"danger@npm:^11.2.8":
-  version: 11.2.8
-  resolution: "danger@npm:11.2.8"
+"danger@npm:^11.3.0":
+  version: 11.3.0
+  resolution: "danger@npm:11.3.0"
   dependencies:
-    "@gitbeaker/node": ^21.3.0
+    "@gitbeaker/core": ^35.8.1
+    "@gitbeaker/node": ^35.8.1
     "@octokit/rest": ^18.12.0
     async-retry: 1.2.3
     chalk: ^2.3.0
@@ -2476,7 +2479,7 @@ __metadata:
     danger-process: distribution/commands/danger-process.js
     danger-reset-status: distribution/commands/danger-reset-status.js
     danger-runner: distribution/commands/danger-runner.js
-  checksum: cacc0d258122018ad4c7c15cb8837245ecd01e5adc94dd6240528c4695fa92c4c551f1728ee382a5e9c133818e9d2331cd0e8b0223c0706bb6c711bbce1a7838
+  checksum: d691edee1f677e48b173ba163314c385968d5967824467d6ee2a5ab3076a543981b85a3bd281c23dbd953d67f11fb1d0d9c07f8af1d29fc2438c3d3e12d9799e
   languageName: node
   linkType: hard
 
@@ -2539,7 +2542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decode-uri-component@npm:^0.2.0":
+"decode-uri-component@npm:^0.2.2":
   version: 0.2.2
   resolution: "decode-uri-component@npm:0.2.2"
   checksum: 95476a7d28f267292ce745eac3524a9079058bbb35767b76e3ee87d42e34cd0275d2eb19d9d08c3e167f97556e8a2872747f5e65cbebcac8b0c98d83e285f139
@@ -2649,6 +2652,13 @@ __metadata:
     rimraf: ^3.0.0
     slash: ^3.0.0
   checksum: d9e4ef2c1227230ed61291fc99bdcb084167c0fe580df5fa8b2524b511c09f0c51887edf7dc5ffaa6ecfb25c92a2ca185ec49d5233baf6c5fe50248ab1f13e57
+  languageName: node
+  linkType: hard
+
+"delay@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "delay@npm:5.0.0"
+  checksum: 62f151151ecfde0d9afbb8a6be37a6d103c4cb24f35a20ef3fe56f920b0d0d0bb02bc9c0a3084d0179ef669ca332b91155f2ee4d9854622cd2cdba5fc95285f9
   languageName: node
   linkType: hard
 
@@ -3806,14 +3816,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "form-data@npm:3.0.1"
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
   dependencies:
     asynckit: ^0.4.0
     combined-stream: ^1.0.8
     mime-types: ^2.1.12
-  checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -4180,7 +4190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:^11.1.4":
+"got@npm:^11.8.3":
   version: 11.8.6
   resolution: "got@npm:11.8.6"
   dependencies:
@@ -6026,6 +6036,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mime@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "mime@npm:3.0.0"
+  bin:
+    mime: cli.js
+  checksum: f43f9b7bfa64534e6b05bd6062961681aeb406a5b53673b53b683f27fcc4e739989941836a355eef831f4478923651ecc739f4a5f6e20a76487b432bfd4db928
+  languageName: node
+  linkType: hard
+
 "mimic-fn@npm:^1.0.0":
   version: 1.2.0
   resolution: "mimic-fn@npm:1.2.0"
@@ -6330,7 +6349,7 @@ __metadata:
     "@types/node": ^18.17.17
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
-    danger: ^11.2.8
+    danger: ^11.3.0
     danger-plugin-jest: ^1.3.0
     dotenv: ^16.3.1
     eslint: ^8.49.0
@@ -7332,15 +7351,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"query-string@npm:^6.12.1":
-  version: 6.14.1
-  resolution: "query-string@npm:6.14.1"
+"qs@npm:^6.10.1":
+  version: 6.11.2
+  resolution: "qs@npm:6.11.2"
   dependencies:
-    decode-uri-component: ^0.2.0
+    side-channel: ^1.0.4
+  checksum: e812f3c590b2262548647d62f1637b6989cc56656dc960b893fe2098d96e1bd633f36576f4cd7564dfbff9db42e17775884db96d846bebe4f37420d073ecdc0b
+  languageName: node
+  linkType: hard
+
+"query-string@npm:^7.0.0":
+  version: 7.1.3
+  resolution: "query-string@npm:7.1.3"
+  dependencies:
+    decode-uri-component: ^0.2.2
     filter-obj: ^1.1.0
     split-on-first: ^1.0.0
     strict-uri-encode: ^2.0.0
-  checksum: f2c7347578fa0f3fd4eaace506470cb4e9dc52d409a7ddbd613f614b9a594d750877e193b5d5e843c7477b3b295b857ec328903c943957adc41a3efb6c929449
+  checksum: 91af02dcd9cc9227a052841d5c2eecb80a0d6489d05625df506a097ef1c59037cfb5e907f39b84643cbfd535c955abec3e553d0130a7b510120c37d06e0f4346
   languageName: node
   linkType: hard
 
