@@ -1966,6 +1966,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"builtin-modules@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "builtin-modules@npm:3.3.0"
+  checksum: db021755d7ed8be048f25668fe2117620861ef6703ea2c65ed2779c9e3636d5c3b82325bd912244293959ff3ae303afa3471f6a15bf5060c103e4cc3a839749d
+  languageName: node
+  linkType: hard
+
 "builtins@npm:^5.0.1":
   version: 5.0.1
   resolution: "builtins@npm:5.0.1"
@@ -3392,22 +3399,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-n@npm:^16.3.0":
-  version: 16.3.0
-  resolution: "eslint-plugin-n@npm:16.3.0"
+"eslint-plugin-n@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "eslint-plugin-n@npm:16.3.1"
   dependencies:
     "@eslint-community/eslint-utils": ^4.4.0
     builtins: ^5.0.1
     eslint-plugin-es-x: ^7.1.0
     get-tsconfig: ^4.7.0
     ignore: ^5.2.4
+    is-builtin-module: ^3.2.1
     is-core-module: ^2.12.1
     minimatch: ^3.1.2
     resolve: ^1.22.2
     semver: ^7.5.3
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: 1463618c4935203d86f7ebe5076b2a9b5da9a7b57db588527e21243190a4aa2a0a401d74bd5cb9b8b3d39ca40741996a35d9e891c29c8c876fa1185af46ac7cf
+  checksum: 915d80f16e2668d4692536bd4592f7d9d5202c5babf8d204fdb602137481d2fcb2a7c76f67958b327699d9df5c22d91def0b42b6599a3e283941170a320f77d3
   languageName: node
   linkType: hard
 
@@ -4912,6 +4920,15 @@ __metadata:
   version: 2.0.5
   resolution: "is-buffer@npm:2.0.5"
   checksum: 764c9ad8b523a9f5a32af29bdf772b08eb48c04d2ad0a7240916ac2688c983bf5f8504bf25b35e66240edeb9d9085461f9b5dae1f3d2861c6b06a65fe983de42
+  languageName: node
+  linkType: hard
+
+"is-builtin-module@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "is-builtin-module@npm:3.2.1"
+  dependencies:
+    builtin-modules: ^3.3.0
+  checksum: e8f0ffc19a98240bda9c7ada84d846486365af88d14616e737d280d378695c8c448a621dcafc8332dbf0fcd0a17b0763b845400709963fa9151ddffece90ae88
   languageName: node
   linkType: hard
 
@@ -6574,7 +6591,7 @@ __metadata:
     eslint-config-prettier: ^9.0.0
     eslint-config-standard-with-typescript: ^37.0.0
     eslint-plugin-import: ^2.29.0
-    eslint-plugin-n: ^16.3.0
+    eslint-plugin-n: ^16.3.1
     eslint-plugin-prettier: ^5.0.1
     eslint-plugin-promise: ^6.1.1
     eslint-plugin-react: ^7.33.2
